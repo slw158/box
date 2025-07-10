@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历 - 简约风格</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 20px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #3498db;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .item-subtitle {
+      color: #7f8c8d;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background-color: #f0f0f0;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="name">张三</div>
+    <div class="title">前端开发工程师</div>
+    <div class="contact-info">
+      <span>📱 13800138000</span>
+      <span>✉️ zhangsan@email.com</span>
+      <span>👨 男/23岁</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">求职意向</div>
+    <div class="item">
+      <div>意向岗位：前端开发工程师</div>
+      <div>期望城市：上海/杭州/北京</div>
+      <div>期望薪资：8k-12k</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">教育背景</div>
+    <div class="two-column">
+      <div class="item">
+        <div class="item-title">2020.09 - 2024.06</div>
+      </div>
+      <div class="item">
+        <div class="item-title">XX大学</div>
+        <div class="item-subtitle">计算机科学与技术 | 本科</div>
+        <div>主修课程：数据结构、操作系统、计算机网络、Web前端开发、数据库原理</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">技能专长</div>
+    <div class="skills">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Vue.js</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Git</span>
+      <span class="skill">Webpack</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">项目经验</div>
+    <div class="item">
+      <div class="item-title">校园二手交易平台（2023.03 - 2023.06）</div>
+      <div class="item-subtitle">前端开发 | Vue.js + Element UI</div>
+      <ul>
+        <li>负责前端页面开发，实现商品展示、搜索、发布等功能</li>
+        <li>使用axios与后端API交互，实现用户登录、商品管理等模块</li>
+        <li>优化页面加载速度，减少首屏加载时间30%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">自我评价</div>
+    <div class="item">
+      <ul>
+        <li>具备扎实的前端基础，熟悉HTML/CSS/JavaScript</li>
+        <li>熟悉Vue.js框架及相关技术栈，有实际项目开发经验</li>
+        <li>良好的学习能力和团队协作精神，能快速适应新技术</li>
+        <li>对前端技术有浓厚兴趣，持续关注行业发展趋势</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
