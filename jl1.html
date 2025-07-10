@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历 - 卡片风格</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      padding: 20px;
+      color: #333;
+    }
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .profile-card {
+      text-align: center;
+      background-color: #3498db;
+      color: white;
+    }
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .profile-title {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .contact-icon {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #3498db;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #eee;
+    }
+    .skill-item {
+      margin-bottom: 10px;
+    }
+    .skill-name {
+      margin-bottom: 5px;
+    }
+    .skill-bar {
+      height: 8px;
+      background-color: #eee;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .skill-level {
+      height: 100%;
+      background-color: #3498db;
+    }
+    .experience-item {
+      margin-bottom: 15px;
+    }
+    .experience-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .experience-period {
+      color: #7f8c8d;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .experience-desc {
+      font-size: 14px;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    @media (max-width: 768px) {
+      .resume-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="left-column">
+      <div class="card profile-card">
+        <div class="profile-name">李四</div>
+        <div class="profile-title">UI设计师</div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>13800138000</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>lisi@email.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">👨</div>
+          <div>男/22岁</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">求职意向</div>
+        <div class="experience-item">
+          <div>UI设计师/视觉设计师</div>
+          <div>上海/杭州/深圳</div>
+          <div>期望薪资：6k-10k</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">专业技能</div>
+        <div class="skill-item">
+          <div class="skill-name">Photoshop</div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Illustrator</div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Figma</div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">HTML/CSS</div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">兴趣爱好</div>
+        <div>
+          <span class="tag">摄影</span>
+          <span class="tag">绘画</span>
+          <span class="tag">旅行</span>
+          <span class="tag">阅读</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="card">
+        <div class="section-title">教育背景</div>
+        <div class="experience-item">
+          <div class="experience-title">XX艺术学院</div>
+          <div class="experience-period">2020.09 - 2024.06 | 视觉传达设计 | 本科</div>
+          <div class="experience-desc">
+            主修课程：设计基础、色彩构成、平面设计、UI设计、交互设计、网页设计
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">项目经验</div>
+        <div class="experience-item">
+          <div class="experience-title">校园APP界面设计</div>
+          <div class="experience-period">2023.03 - 2023.06 | 个人项目</div>
+          <div class="experience-desc">
+            <ul>
+              <li>使用Figma设计校园APP的整套UI界面</li>
+              <li>设计包括登录、课程表、成绩查询等核心功能页面</li>
+              <li>创建设计规范文档，确保界面风格统一</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-title">毕业设计作品</div>
+          <div class="experience-period">2023.09 - 2024.05 | 毕业设计</div>
+          <div class="experience-desc">
+            <ul>
+              <li>设计并制作品牌视觉识别系统</li>
+              <li>完成品牌LOGO、VI手册、宣传物料等设计</li>
+              <li>作品获得学院优秀毕业设计奖</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">自我评价</div>
+        <div class="experience-desc">
+          <ul>
+            <li>具备扎实的设计理论基础和良好的审美能力</li>
+            <li>熟练使用Photoshop、Illustrator等设计工具</li>
+            <li>对UI/UX设计有浓厚兴趣，关注设计趋势</li>
+            <li>良好的沟通能力和团队协作精神</li>
+            <li>学习能力强，能快速适应新工具和新技术</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
