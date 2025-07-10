@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历 - 时间轴风格</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .resume-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+    .contact-icon {
+      margin-right: 8px;
+    }
+    .content {
+      padding: 30px;
+    }
+    .section {
+      margin-bottom: 30px;
+      position: relative;
+      padding-left: 30px;
+    }
+    .section:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background-color: #e0e0e0;
+    }
+    .section-title {
+      font-size: 20px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .section-title:before {
+      content: "";
+      position: absolute;
+      left: -33px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #3498db;
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px #3498db;
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 25px;
+    }
+    .timeline-item:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #3498db;
+    }
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .timeline-title {
+      font-weight: bold;
+    }
+    .timeline-period {
+      color: #7f8c8d;
+    }
+    .timeline-subtitle {
+      color: #7f8c8d;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .skill-category {
+      margin-bottom: 15px;
+    }
+    .skill-category-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-tag {
+      background-color: #e3f2fd;
+      color: #1976d2;
+      padding: 4px 10px;
+      border-radius: 15px;
+      font-size: 13px;
+    }
+    .self-eval-item {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 15px;
+    }
+    .self-eval-item:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+    }
+    @media (max-width: 600px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+      .timeline-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <div class="header">
+      <div class="name">王五</div>
+      <div class="title">市场营销专员</div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span>13800138000</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span>wangwu@email.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">👩</span>
+          <span>女/22岁</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <div class="section-title">求职意向</div>
+        <div class="timeline-item">
+          <div>市场营销专员/市场策划</div>
+          <div>北京/上海/广州</div>
+          <div>期望薪资：7k-10k</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">教育背景</div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="timeline-title">XX大学</div>
+            <div class="timeline-period">2020.09 - 2024.06</div>
+          </div>
+          <div class="timeline-subtitle">市场营销 | 本科</div>
+          <div>
+            主修课程：市场营销学、消费者行为学、市场调研、品牌管理、数字营销、广告学
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">实习经历</div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="timeline-title">XX科技有限公司</div>
+            <div class="timeline-period">2023.07 - 2023.12</div>
+          </div>
+          <div class="timeline-subtitle">市场部实习生</div>
+          <ul>
+            <li>协助策划并执行线上营销活动，活动期间用户增长15%</li>
+            <li>负责社交媒体内容创作与发布，提高账号互动率</li>
+            <li>参与市场调研，收集分析竞品信息，撰写调研报告</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="timeline-title">XX广告公司</div>
+            <div class="timeline-period">2022.07 - 2022.09</div>
+          </div>
+          <div class="timeline-subtitle">策划助理</div>
+          <ul>
+            <li>协助策划团队完成客户提案准备</li>
+            <li>参与创意头脑风暴，提供创新想法</li>
+            <li>整理项目资料，协助制作策划方案</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">专业技能</div>
+        <div class="skills-container">
+          <div class="skill-category">
+            <div class="skill-category-title">市场营销</div>
+            <div class="skill-tags">
+              <span class="skill-tag">市场调研</span>
+              <span class="skill-tag">活动策划</span>
+              <span class="skill-tag">品牌管理</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">数字工具</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">PPT</span>
+              <span class="skill-tag">SPSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">社交媒体</div>
+            <div class="skill-tags">
+              <span class="skill-tag">微信公众号</span>
+              <span class="skill-tag">微博</span>
+              <span class="skill-tag">小红书</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">语言能力</div>
+            <div class="skill-tags">
+              <span class="skill-tag">英语CET-6</span>
+              <span class="skill-tag">普通话</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">自我评价</div>
+        <div>
+          <div class="self-eval-item">具备扎实的市场营销理论基础，对数字营销有浓厚兴趣</div>
+          <div class="self-eval-item">良好的数据分析能力和市场敏感度</div>
+          <div class="self-eval-item">优秀的沟通表达能力和团队协作精神</div>
+          <div class="self-eval-item">学习能力强，能快速适应新环境</div>
+          <div class="self-eval-item">工作细致认真，有责任心</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
